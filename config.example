@@ -1,0 +1,23 @@
+# Snapp VPN user configuration
+# Copy to: ~/.config/snapp-vpn/config
+
+# Required: FortiGate VPN username (usually email)
+SNAPP_VPN_USER="you@company.cab"
+
+# Optional: override default server list
+# declare -gA VPN_SERVERS=(
+#   ["site1"]="site1.snapp.cab:43443"
+#   ["site2"]="site2.snapp.cab:43443"
+#   ["site3"]="site3.dc.snappcloud.io:43443"
+# )
+# VPN_SERVER_ORDER=(site1 site2 site3)
+
+# Optional: hosts to ping in `vpn_health` (internal IPs reachable over VPN)
+# typeset -ga VPN_HEALTH_ENDPOINTS=(
+#   "172.31.1.1"
+# )
+
+# Optional: keychain service names (defaults: snapp-vpn / snapp-totp)
+# SNAPP_VPN_KEYCHAIN_SERVICE="snapp-vpn"
+# SNAPP_VPN_KEYCHAIN_TOTP="snapp-totp"
+# SNAPP_VPN_TOTP_ACCOUNT="totp-secret"
